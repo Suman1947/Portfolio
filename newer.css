@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', sans-serif;
+}
+
+.hero{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: #eff4fd;
+}
+
+.logo{
+    width: 100px;
+    height: 80px;
+    border-radius: 50%;
+    transform:translateX(-50%);
+    transition: bottom 1s, ease 1s;
+}
+
+.logo:hover{
+    width: 120px;
+    height: 80px;
+}
+
+nav{
+  display: flex;
+  width: 84%;
+  margin: auto;
+  padding: 20px 0;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+ul {
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    transform: translateX(-50%);
+    transition: bottom 1s, ease 1s;
+}
+
+nav ul li a:hover{
+    color: red;
+    font-size: 18px;
+}
+
+.details{
+    margin-left: 8%;
+    margin-top: 13%;
+}
+
+.details h1{
+    font-size: 50px;
+    color: #212121;
+    margin-bottom: 20px;
+}
+
+span{
+    color: rgb(15, 149, 149);
+    }
+
+.details p{
+    color: #555;
+    line-height: 22px;
+}
+
+.details a{
+    background: #212121;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+.details a:hover{
+    color: blue;
+    background-color: rgb(22, 215, 22);
+}
+
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.images img{
+    height: 100%;
+    position: absolute;
+    left: 60%;
+    bottom: 50px;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+nav .active{
+    color: red;
+    border-radius: 8px;
+}
+    
+.images:hover .shape{
+    bottom: 40px;
+}
+
+.images:hover .myimg{
+    left: 45%;
+}
+
+
+.home-sci{
+    position: absolute;
+    bottom: 40px;
+    left: 120px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.home-sci a:hover {
+    color: red;
+}
+
+.home-sci a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: greenyellow;
+    border-radius: 50%;
+    z-index: -1;
+    transition: .5s;
+}
+
+.home-sci a:hover::before{
+    width: 100%;
+}
+
